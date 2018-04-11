@@ -17,7 +17,7 @@
 					,easing:'swing'					
 					,activeClass:'active'
 					,buttonClass:'gallery-button'
-					,blockAtEnd:true
+					,blocPratikshand:true
 					,fu:{
 						pre:function(){							
 							_.axis=_.axis=='x'							
@@ -75,8 +75,8 @@
 							n=n<_.itms.length
 								?n>=0
 									?n
-									:_.blockAtEnd?0:_.itms.length-1
-									:_.blockAtEnd?_.itms.length-1:0
+									:_.blocPratikshand?0:_.itms.length-1
+									:_.blocPratikshand?_.itms.length-1:0
 						
 							_.pos=n
 							
@@ -101,8 +101,8 @@
 							_.pos=_.n=n<_.itms.length
 								?n>=0
 									?n
-									:_.blockAtEnd?0:_.itms.length-1
-									:_.blockAtEnd?_.itms.length-1:0
+									:_.blocPratikshand?0:_.itms.length-1
+									:_.blocPratikshand?_.itms.length-1:0
 							
 							_.li
 								.removeClass(_.activeClass)
